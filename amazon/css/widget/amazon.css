@@ -1,0 +1,343 @@
+.wrap {
+    width: 100%;
+}
+
+/*top*/
+.top {
+    position: relative;
+}
+
+.top .top-center {
+    background-color: #f5f5f5;
+}
+
+.top .level {
+    width: 820px;
+    margin: 0 auto;
+}
+
+/*想要实现下面这种情况得注意的是要给他的父级添加：hover，只能父级来控制下面的子元素，而同级的兄弟元素不能实现样式*/
+
+.top:hover .img-b {
+    display: block;
+}
+
+.top .img-b {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+/*头部区域*/
+.head-a {
+    overflow: hidden;
+}
+
+.ha-logo {
+    margin: 0px 70px 0px 30px;
+    float: left;
+}
+
+.ha-logo .a {
+    background: url("../../img/base/icon.png") no-repeat;
+    width: 94px;
+    height: 48px;
+    display: inline-block;
+    background-position-y: -88px;
+}
+
+.ha-seek {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    top: 10px;
+}
+
+.ha-seek .select {
+    padding: 6px 0px;
+    background-color: #f8f8f8;
+    border-color: #bdbdbd;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    cursor: pointer;
+    border-right-width: 0px;
+    float: left;
+}
+
+.ha-seek .input {
+    float: left;
+    padding: 6px 538px;
+}
+
+.ha-seek .a {
+    background: url("../../img/base/icon.png") no-repeat;
+    width: 40px;
+    height: 36px;
+    display: inline-block;
+    background-position-y: -283px;
+    background-position-x: -31px;
+    background-color: #545c64;
+    float: left;
+}
+
+.ha-seek .a1 {
+    display: inline-block;
+    width: 368px;
+    height: 38px;
+    float: left;
+    background: url("../../img/base/CASIO.gif") no-repeat;
+}
+
+.head-b {
+    overflow: hidden;
+    background-color: #f6f6f6;
+}
+
+.hb-browse {
+    padding-left: 38px;
+    display: inline-block;
+    float: left;
+}
+
+.head-b .span {
+    border: 0px;
+    background-color: #f6f6f6;
+    font-size: 110%;
+    font-weight: 400;
+    position: relative;
+    left: -6px;
+    cursor: pointer;
+}
+
+.hb-function {
+    float: left;
+    margin-left: 36px;
+    position: relative;
+    top: 20px;
+}
+
+.hb-function .ul {
+    overflow: hidden;
+}
+
+.hb-function .li {
+    float: left;
+    padding-right: 14px;
+}
+
+.hb-function .a {
+    color: #0055aa;
+}
+
+.hb-information {
+    float: right;
+    overflow: hidden;
+}
+
+.hb-information .people {
+    float: left;
+}
+
+.hb-information .gouwuche {
+    float: left;
+    margin: 0px 10px;
+}
+
+.hb-information .a {
+    background: url("../../img/base/icon.png") no-repeat;
+    display: inline-block;
+    background-position-y: -332px;
+    background-position-x: -8px;
+    width: 43px;
+    height: 34px;
+    float: left;
+}
+
+.hb-information .span {
+    position: relative;
+    top: 16px;
+}
+
+.hb-information .want {
+    float: left;
+    margin-left: 10px;
+    position: relative;
+    top: 16px;
+}
+
+/*中间内容区域*/
+.content {
+    overflow: hidden;
+}
+
+/*左侧导航栏*/
+.left-nav {
+    width: 110px;
+    margin-left: 24px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    padding: 6px 10px;
+    float: left;
+}
+
+.left-nav .ul {
+
+}
+
+.left-nav .li {
+    padding: 4px;
+}
+
+.left-nav .a {
+    color: #000000;
+}
+
+.left-nav hr {
+    color: #eeeeee;
+}
+
+.left-nav .span {
+    color: #666666;
+    cursor: pointer;
+}
+
+.left-nav .li:hover .add {
+    display: block;
+}
+
+.add {
+    display: none;
+    position: absolute;
+    top: 132px;
+    left: 156px;
+}
+
+/*图片轮播*/
+.carousel {
+    float: left;
+    position: relative;
+}
+
+.carousel .pic {
+
+}
+
+.carousel .a {
+
+}
+
+.carousel .img {
+
+}
+
+.carousel:hover .add2 {
+    display: block;
+}
+
+.carousel .add2 {
+    width: 100%;
+    display: none;
+    position: absolute;
+    bottom: 0;
+}
+
+.carousel .ul {
+    position: relative;
+}
+
+.carousel .li {
+    float: left;
+    width: 12.5%;
+    text-align: center;
+    padding: 14px 0px;
+    background-color: #000000;
+    opacity: 0.6;
+    color: white;
+}
+
+.carousel .aa {
+    color: #ffffff;
+}
+
+/*主要推荐*/
+.main-recommend {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.rec1 {
+    overflow: hidden;
+    border-right: 1px solid #dddddd;
+    float: left;
+    margin-left: 12px;
+}
+
+.rec1 .p {
+    font-size: 22px;
+}
+
+.rec1 .span {
+    color: #ff8c00;
+}
+
+.rec1-l {
+    float: left;
+    width: 124px;
+    margin-top: 10px;
+}
+
+.rec1-l .span1 {
+    color: #b12704;
+    padding: 0px 16px;
+}
+
+.rec1-l .span2 {
+    padding: 0px 20px;
+    color: #b12704;
+}
+
+.rec1-l .em {
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.rec1-l .span3 {
+    color: #cccccc;
+}
+
+.rec1-r {
+    float: left;
+    margin: 0px 12px;
+}
+
+.rec1-r .img {
+    width: 130px;
+}
+
+/*相关产品推荐*/
+.historical {
+    width: 1164px;
+    margin-left: 158px;
+}
+
+.historical .h2 {
+    font-size: 22px;
+}
+
+.historical .hr {
+    width: 93%;
+    color: #eeeeee;
+}
+
+.historical .img {
+    padding: 0px 38px;
+}
+
+#hei:after{
+    content: 'asdf后';
+}
+#hei:before{
+    content: 'asdf前';
+}
